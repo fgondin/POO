@@ -1,6 +1,6 @@
 interface Forma {
-    public void getTipo();
-    public void getArea();
+    public String getTipo();
+    public double getArea();
 }
 
 class Quadrado implements Forma {
@@ -15,7 +15,7 @@ class Quadrado implements Forma {
     public String getTipo(){
         return "quadrado";
     }
-    public Double getArea(){
+    public double getArea(){
         return this.largura * this.altura;
     }
 }
